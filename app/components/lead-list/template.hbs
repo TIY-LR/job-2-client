@@ -1,9 +1,3 @@
-<li>
-    {{link-to 'New Lead' 'lead.create'}}
-</li>
-
-{{#each model as |lead|}}
-<li>
-    {{lead}}
-</li>
-{{/each}}
+{{#md-collection content=leads header='Leads' as |lead|}}
+  {{link-to lead.jobTitle 'lead.show' lead class='collection-item'}}
+{{/md-collection}}

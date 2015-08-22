@@ -4,6 +4,12 @@
   {{/link-to}}
 {{/md-navbar}}
 
-{{lead-list model}}
+<div class="container">
+    {{#link-to 'lead.create'}}
+    {{md-btn text='New Lead' icon='mdi-content-add'}}
+    {{/link-to}}
+
+    {{lead-list leads=model}}
+</div>
 
 {{outlet}}

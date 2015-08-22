@@ -1,9 +1,7 @@
-<form {{action 'submitLead' model}}>
+<form {{action 'submitLead' lead on='submit'}}>
 
-    {{md-input label='Company Name'}}
-    {{md-input label='Job Title'}}
+    {{md-input label='Company Name' value=companyName}}
+    {{md-input label='Job Title' value=jobTitle}}
 
-    {{md-btn-submit icon='mdi-content-send'
-    iconPosition='right'
-    text='Submit'}}
+    {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit'}}
 </form>
