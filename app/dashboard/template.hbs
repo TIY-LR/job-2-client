@@ -5,11 +5,14 @@
 {{/md-navbar}}
 
 <div class="container">
-    {{#link-to 'lead.create'}}
-    {{md-btn text='New Lead' icon='mdi-content-add'}}
-    {{/link-to}}
 
-    {{lead-list leads=model}}
+{{#md-tabs
+  selected=basicTabsSelection}}
+  {{#link-to 'dashboard.lead'}}{{md-tab value='a' title="Leads"}}{{/link-to}}
+  {{#link-to 'dashboard.companies'}}{{md-tab value='b' title="Companies"}}{{/link-to}}
+{{/md-tabs}}
+
+    {{outlet}}
 </div>
 
-{{outlet}}
+

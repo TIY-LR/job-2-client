@@ -8,13 +8,19 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('index', {path: '/'});
   this.route('signup');
-  this.route('dashboard');
-  this.route('profile');
-  this.route('lead', function() {
-    this.route('create', {path: 'new'});
-    this.route('edit', {path: '/:id/edit'});
-    this.route('show', {path: '/:id'});
+  this.route('dashboard', function() {
+    this.route('lead', function() {
+      this.route('index', {path: '/'});
+      this.route('create', {path: 'new'});
+      this.route('edit', {path: '/:id/edit'});
+      this.route('show', {path: '/:id'});
+    });
+    this.route('companies', function() {
+      this.route('index', {path: '/'});
+      this.route('show', {path: '/:id'});
+    });
   });
+  this.route('profile');
 });
 
 export default Router;
