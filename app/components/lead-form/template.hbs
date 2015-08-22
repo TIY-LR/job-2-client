@@ -1,7 +1,18 @@
 <form {{action 'submitLead' model}}>
 
-    {{md-input label='Company Name'}}
     {{md-input label='Job Title'}}
+
+    {{md-input label='Company Name'}}
+    {{md-input label='Company URL'}}
+
+    {{md-input label='Contact at Company'}}
+    {{md-input label='Title'}}
+    {{md-input label='Email' type="email"}}
+    {{md-input label='Phone Number' type="tel"}}
+
+    {{md-input label='tags'}}
+
+    {{md-textarea label='Notes' value=notes}}
 
     {{md-btn-submit icon='mdi-content-send'
     iconPosition='right'
