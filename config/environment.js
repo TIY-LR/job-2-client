@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'iron-job-tracker',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' http://jobhunta.azurewebsites.net" },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

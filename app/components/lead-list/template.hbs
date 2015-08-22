@@ -1,7 +1,3 @@
-{{#link-to 'lead.create'}}
-{{md-btn text='New Lead' buttonType='large' icon='mdi-content-add'}}
-{{/link-to}}
-
 {{#md-collection content=leads header='Leads' as |lead|}}
   {{link-to lead.jobTitle 'lead.show' lead class='collection-item'}}
 {{/md-collection}}
