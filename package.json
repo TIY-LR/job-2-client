@@ -43,9 +43,7 @@
     "ember-key-responder": "0.2.1",
     "ember-modal-dialog": "0.7.7",
     "ember-new-computed": "1.0.2",
+    "ember-plupload": "1.13.6",
     "ember-radio-button": "1.0.7"
-  },
-  "dependencies": {
-    "makapen-file-upload": "0.0.5"
   }
 }
