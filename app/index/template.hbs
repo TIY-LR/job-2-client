@@ -1,1 +1,14 @@
+<h2>Iron Job Tracker</h2>
+
+<form>
+    {{md-input label='User Name'}}
+    {{md-input label='Password' type="password"}}
+
+    {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Log In'}}
+</form>
+
+{{#link-to 'signup'}}
+{{md-btn text='Sign Up' class='indigo darken-2'}}
+{{/link-to}}
+
 {{outlet}}
