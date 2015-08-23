@@ -12,12 +12,12 @@ Router.map(function() {
     this.route('lead', function() {
       this.route('index', {path: '/'});
       this.route('create', {path: 'new'});
-      this.route('edit', {path: '/:id/edit'});
       this.route('show', {path: '/:id'});
     });
     this.route('companies', function() {
       this.route('index', {path: '/'});
       this.route('show', {path: '/:id'});
+      this.route('create', {path: 'new'});
     });
   });
   this.route('profile');

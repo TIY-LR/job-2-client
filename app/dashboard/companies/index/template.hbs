@@ -1,3 +1,7 @@
+{{#link-to 'dashboard.companies.create'}}
+{{md-btn text='New Company' icon='mdi-content-add'}}
+{{/link-to}}
+
 {{#md-collection content=model header='Companies' as |company|}}
   {{link-to company.name 'dashboard.companies.show' company class='collection-item'}}
 {{/md-collection}}
