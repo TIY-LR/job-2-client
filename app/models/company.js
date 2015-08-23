@@ -11,5 +11,5 @@ export default DS.Model.extend({
   // contacts: DS.attr(),
   // leads: DS.attr(),
   contacts: DS.hasMany('contact', {async: true}),
-  leads: DS.hasMany('lead'),
+  leads: DS.hasMany('lead', { async: true }),
 });

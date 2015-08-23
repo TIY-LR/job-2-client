@@ -12,6 +12,6 @@ export default DS.Model.extend({
   phone: DS.attr('number'),
   twitterHandle: DS.attr('string'),
   notes: DS.attr('string'),
-  company: DS.belongsTo('company'),
-  leads: DS.belongsTo('lead'),
+  company: DS.belongsTo('company', { async: true }),
+  leads: DS.belongsTo('lead', { async: true }),
 });
