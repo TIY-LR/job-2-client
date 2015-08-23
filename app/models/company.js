@@ -10,4 +10,6 @@ export default DS.Model.extend({
   zipcode: DS.attr('number'),
   contacts: DS.attr(),
   leads: DS.attr(),
+  // contacts: DS.hasMany('contact'),
+  // leads: DS.hasMany('lead'),
 });
