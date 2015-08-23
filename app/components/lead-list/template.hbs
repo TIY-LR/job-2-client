@@ -3,5 +3,10 @@
 {{/link-to}}
 
 {{#md-collection content=leads header='Leads' as |lead|}}
-  {{link-to lead.jobTitle 'dashboard.lead.show' lead class='collection-item'}}
+<div class="collection-item">
+    {{link-to lead.jobTitle 'dashboard.lead.show' lead class='teal-text'}}
+    <div class="secondary-content teal-text text-darken-2">
+        {{lead.status}}
+    </div>
+</div>
 {{/md-collection}}
