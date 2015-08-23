@@ -7,7 +7,8 @@ export default Ember.Component.extend({
       var data = this.getProperties(
         'jobTitle',
        'company',
-       'contact'
+       'contact',
+       'status'
        );
       this.sendAction('submitLead', lead, data);
     },

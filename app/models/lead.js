@@ -5,4 +5,5 @@ export default DS.Model.extend({
   contact: DS.belongsTo('contact'),
   jobTitle: DS.attr('string'),
   companyName: DS.attr('string'),
+  status: DS.attr('string'),
 });
