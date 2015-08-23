@@ -1,2 +1,17 @@
-<a href="http://{{model.url}}"><h4>{{model.name}}</h4></a>
+<a href="http://{{model.url}}">
+    <h4>{{model.name}}</h4>
+</a>
+<h5>{{model.city}}, {{model.state}}</h5>
+<span>
+    {{model.address1}}
+</span>
+
+{{#md-collection content=model.leads header='Leads' as |lead|}}
+  {{!-- {{link-to lead.jobTitle 'dashboard.companies.show' lead class='collection-item'}} --}}
+  <h6 class="collection-item">{{lead.jobTitle}}</h6>
+{{/md-collection}}
+{{#md-collection content=model.contacts header='Contacts' as |contact|}}
+  {{!-- {{link-to lead.jobTitle 'dashboard.companies.show' lead class='collection-item'}} --}}
+  <h6 class="collection-item">{{lead.fullName}}</h6>
+{{/md-collection}}
 
