@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     submitContact: function(contact) {
       var data = this.getProperties(
         'firstName',
-        'lastname',
+        'lastName',
         'title',
         'email',
         'phone',
