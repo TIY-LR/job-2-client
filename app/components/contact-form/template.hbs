@@ -1,0 +1,27 @@
+<h5>New Contact</h5>
+<form {{action 'submitContact' contact on='submit'}}>
+
+    {{md-input label='First Name' value=firstName}}
+    {{md-input label='Last Name' value=lastName}}
+    {{md-input label='Title' value=title}}
+    {{md-input label='Email' value=email type="email"}}
+    {{md-input label='Phone Number' value=phone type="tel"}}
+    {{md-input label='Twitter Handle' value=twitterHandle}}
+    {{md-textarea label='notes' value=notes}}
+
+    {{md-select content=companies
+    value=company
+    label='Company'
+    prompt='Please choose...'
+    optionLabelPath='content.name'
+    optionValuePath='content'}}
+
+    {{md-select content=leads
+    value=lead
+    label='Lead'
+    prompt='Please choose...'
+    optionLabelPath='content.jobTitle'
+    optionValuePath='content'}}
+
+    {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit'}}
+</form>

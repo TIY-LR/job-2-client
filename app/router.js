@@ -19,6 +19,9 @@ Router.map(function() {
       this.route('show', {path: '/:id'});
       this.route('create', {path: 'new'});
     });
+    this.route('contacts', function() {
+      this.route('create', {path: 'new'});
+    });
   });
   this.route('profile');
 });
