@@ -13,5 +13,5 @@ export default DS.Model.extend({
   twitterHandle: DS.attr('string'),
   notes: DS.attr('string'),
   company: DS.belongsTo('company'),
-  lead: DS.belongsTo('lead'),
+  leads: DS.belongsTo('lead'),
 });

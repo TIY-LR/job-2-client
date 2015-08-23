@@ -44,6 +44,9 @@
     "ember-modal-dialog": "0.7.7",
     "ember-new-computed": "1.0.2",
     "ember-plupload": "1.13.6",
-    "ember-radio-button": "1.0.7"
+    "ember-radio-button": "1.0.7",
+    "express": "^4.13.3",
+    "glob": "^4.5.3",
+    "morgan": "^1.6.1"
   }
 }
