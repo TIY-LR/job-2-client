@@ -9,7 +9,7 @@ export default DS.Model.extend({
   state: DS.attr('string'),
   zipcode: DS.attr('number'),
   // contacts: DS.attr(),
-  leads: DS.attr(),
+  // leads: DS.attr(),
   contacts: DS.hasMany('contact'),
-  // leads: DS.hasMany('lead'),
+  leads: DS.hasMany('lead'),
 });
