@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     submitLead: function(lead, data) {
       lead.setProperties(data);
       lead.save().then(() => {
-        this.transitionTo('lead.show', lead);
+        this.transitionTo('dashboard.lead.show', lead);
       });
     },
   },
