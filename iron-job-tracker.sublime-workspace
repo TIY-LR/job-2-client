@@ -527,10 +527,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 253.0,
-		"last_filter": "install",
+		"height": 83.0,
+		"last_filter": "quote",
 		"selected_items":
 		[
+			[
+				"quote",
+				"ChangeQuotes"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -550,10 +554,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"quote",
-				"ChangeQuotes"
 			],
 			[
 				"insta",
@@ -592,7 +592,7 @@
 				"Set Syntax: Shell Script (Bash)"
 			]
 		],
-		"width": 601.0
+		"width": 429.0
 	},
 	"console":
 	{
@@ -613,10 +613,54 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker"
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/adapters",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/lead-form",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/lead-list",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/lead",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/lead/create",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/styles",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/config"
 	],
 	"file_history":
 	[
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/lead-form/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/lead-form/component.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/models/contact.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/models/company.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/models/lead.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/lead/create/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/lead/create/route.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/companies/index/route.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/router.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/companies/index/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/companies/show/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/styles/app.scss",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/lead/show/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/lead-list/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/lead/index/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/lead/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/lead/create/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/lead/create/route.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/dashboard/route.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/config/environment.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/lead-list/component.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/index/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/index/route.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/adapters/application.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/lead/show/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/lead/show/route.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/signup/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/user-form/component.js",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/components/user-form/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/package.json",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/lead/template.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/app/templates/application.hbs",
+		"/Users/corbinotwell/IronYard/hackathon/iron-job-tracker/.ember-cli",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/services/order-builder.js",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/components/order-details.hbs",
 		"/Users/corbinotwell/IronYard/week-8/8.1-restaurant-menu/app/templates/admin/orders/index.hbs",
@@ -710,45 +754,11 @@
 		"/Users/corbinotwell/IronYard/week-6/lesson-2/assets/scss/app.scss",
 		"/Users/corbinotwell/IronYard/week-6/exercise-1/testem.json",
 		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/templates/battle.hbs",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/scss/cagematch.scss",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/js/character.js",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/templates/gameover.hbs",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/templates/character.hbs",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/templates/start.hbs",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/Brocfile.js",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/js/setup.js",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/bower.json",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/package.json",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/.jscsrc",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/public/index.html",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/js/cagematch.js",
-		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/.gitignore",
-		"/Users/corbinotwell/IronYard/week-5/lesson-4/Brocfile.js",
-		"/Users/corbinotwell/IronYard/week-5/lesson-4/assets/js/app.js",
-		"/Users/corbinotwell/IronYard/week-5/lesson-4/public/index.html",
-		"/Users/corbinotwell/IronYard/week-5/lesson-4/assets/templates/podcast.hbs",
-		"/Users/corbinotwell/IronYard/week-5/lesson-4/assets/js/setup.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/koans/AboutHigherOrderFunctions.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/koans/AboutInheritance.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/koans/AboutMutability.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/koans/AboutObjects.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/koans/AboutFunctions.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/koans/AboutArrays.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/koans/AboutExpects.js",
-		"/Users/corbinotwell/IronYard/week-5/5.2-koans/KoansRunner.html",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/.git/COMMIT_EDITMSG",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/keyboard.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/calendar.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/js/accordian.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/Brocfile.js",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/public/keyboard.html",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/scss/keyboard.scss",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/assets/scss/accordian.scss",
-		"/Users/corbinotwell/IronYard/week-4/4.4-jquery-events/public/accordian.html"
+		"/Users/corbinotwell/IronYard/week-5/5.4-turn-based-game/assets/scss/cagematch.scss"
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 54.0
 	},
 	"find_in_files":
 	{
@@ -764,6 +774,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"company",
+			"h6",
+			"company",
+			"h6",
+			"h2",
+			"model",
+			"lead",
+			"item",
+			"model",
+			"lead",
+			"item",
+			"'",
 			"quanity",
 			"stuff",
 			"this.orderItems",
@@ -879,19 +901,7 @@
 			"span",
 			"body",
 			"- ",
-			"* ",
-			"assert",
-			"seatNumber",
-			"log",
-			"giveMeAStudent",
-			"student",
-			"\" \"",
-			"form",
-			"button",
-			"i",
-			"buttons",
-			"Things",
-			"262626"
+			"* "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -963,6 +973,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"lead",
+				"app/models/lead.js"
+			],
 			[
 				"router",
 				"app/router.js"

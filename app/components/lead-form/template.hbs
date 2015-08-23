@@ -1,8 +1,21 @@
 <h5>New Lead</h5>
 <form {{action 'submitLead' lead on='submit'}}>
 
-    {{md-input label='Company Name' value=companyName}}
     {{md-input label='Job Title' value=jobTitle}}
+
+    {{md-select content=companies
+    value=company
+    label='Company'
+    prompt='Please choose...'
+    optionLabelPath='content.name'
+    optionValuePath='content'}}
+
+    {{md-select content=contacts
+    value=contact
+    label='Contact'
+    prompt='Please choose...'
+    optionLabelPath='content.fullName'
+    optionValuePath='content'}}
 
     {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit'}}
 </form>
