@@ -1,1 +1,15 @@
-{{outlet}}
+{{#md-navbar name='Iron Job Tracker' class='indigo' homeRoute='dashboard.lead'}}
+{{/md-navbar}}
+<div class="container">
+    {{#md-card title=model.fullName id="basic-card"}}
+        {{#md-card-content}}
+           {{!--  <img src="{{model.profilePicture}}" alt="{{model.firstName}}" class="profile-picture"> --}}
+            Email: {{model.email}}
+            Password: {{model.password}}
+        {{/md-card-content}}
+        {{#md-card-action}}
+            <a href="{{model.resume}}">Resume</a>
+            <a href="{{model.coverLetter}}">Cover Letter</a>
+        {{/md-card-action}}
+    {{/md-card}}
+</div>
