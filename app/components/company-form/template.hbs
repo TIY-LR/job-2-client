@@ -1,0 +1,13 @@
+<h5>New Company</h5>
+<form {{action 'submitCompany' company on='submit'}}>
+
+    {{md-input label='Company Name' value=name}}
+    {{md-input label='Website' value=url}}
+    {{md-input label='Address' value=address1}}
+    {{md-input label='Address' value=address2}}
+    {{md-input label='City' value=city}}
+    {{md-input label='State' value=state}}
+    {{md-input label='Zipcode' value=zipcode}}
+
+    {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit'}}
+</form>
