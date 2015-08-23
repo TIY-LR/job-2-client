@@ -7,11 +7,11 @@ export default DS.Model.extend({
   fullName: Ember.computed('firstName', 'lastName', function() {
     return `${this.get('firstName')} ${this.get('lastName')}`;
   }),
-  email: DS.attr('string'),
-  twitterHandle: DS.attr('string'),
-  phone: DS.attr('number'),
   title: DS.attr('string'),
+  email: DS.attr('string'),
+  phone: DS.attr('number'),
+  twitterHandle: DS.attr('string'),
   notes: DS.attr('string'),
   company: DS.belongsTo('company'),
-  lead: DS.belongsTo('lead'),
+  leads: DS.belongsTo('lead'),
 });
