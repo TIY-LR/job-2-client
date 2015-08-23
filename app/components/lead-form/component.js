@@ -4,7 +4,11 @@ export default Ember.Component.extend({
   classNames: ['container'],
   actions: {
     submitLead: function(lead) {
-      var data = this.getProperties('jobTitle', 'companyName');
+      var data = this.getProperties(
+        'jobTitle',
+       'company',
+       'contact'
+       );
       this.sendAction('submitLead', lead, data);
     },
   },
